@@ -49,9 +49,8 @@ img {
 }
 
 body {
-    background-color: #808080;
+    background-color: #e8d9bf;
 }
-
 /* ヘッダー */
 .header_wrap {
     display: flex;
@@ -64,15 +63,12 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
-
 .logo {
     width: 227px;
 }
-
 .pc_nav ul {
     display: flex;
 }
-
 .pc_nav ul li {
     width: 105px;
     margin-right: 54px;
@@ -83,16 +79,14 @@ body {
     font-weight: bold;
     text-align: center;
 }
-
 .pc_nav ul li:last-child {
     margin-right: 0;
 }
 .slider img {
     width: 100%;
 }
-
+/*コンテンツ*/
 .contents1 {
-    background-color: #e8d9bf;
     width: 100%;
     text-align: center;
     padding: 107px 0 95px 0;
@@ -111,46 +105,63 @@ body {
     margin-top: 46px;
     line-height: 1.65;
 }
-
+/*ABOUT US*/
 .contents2 {
-    background-color: #e8d9bf;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: left;
     display: flex;
     justify-content: center;
+    padding: 0 10px;
 }
 .contents2-phot {
+    /*500÷1000の計算*/
+    width: 50%;
     border-radius: 0 0 100px 0;
 }
 .contents2-1 {
+    /*490÷1000の計算*/
+    width: 49%;
     margin-left: 80px;
     padding: 63px 0 42px 0;
 }
+.contents2-title {
+    width: 272px;
+}
 .caption {
-    width: 353px;
     font-size: 44px;
     line-height: 1.38;
     margin-top: 52px;
 }
 .caption-text {
-    width: 411px;
     font-size: 16px;
     line-height: 1.62;
     margin-top: 32px;
 }
-
+/*MENU*/
 .contents3 {
-    background-color: #e8d9bf;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 107px;
+    padding: 107px 10px 0 10px;
+}
+.contents3-title1 {
+    width: 151px;
 }
 .menu {
     width: 100%;
     text-align: left;
+    margin-top: 40px;
+}
+.menu ul {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+}
+.menu1 {
+    /*300÷1000の計算*/
+    width: 30%;
 }
 .contents3-phot {
     border-radius: 0 50px 0 0;
@@ -161,7 +172,6 @@ body {
     line-height: 0.57;
 }
 .menu-text {
-    width: 300px;
     font-size: 17px;
     line-height: 1.47;
     margin-top: 24px;
@@ -169,28 +179,34 @@ body {
 .menu1 + .menu1 {
     margin-left: 50px;
 }
-
+/*GALLERY*/
 .contents4 {
-    background-color: #e8d9bf;
     width: 100%;
     text-align: center;
     padding-top: 95px;
 }
-.galleery ul {
+.contents4-title1 {
+    width: 245px;
+}
+.gallery ul {
     display: flex;
     padding-top: 20px;
 }
-
+/*EVENT*/
 .contents5 {
-    background-color: #e8d9bf;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 70px;
+    padding: 70px 10px 0 10px;
 }
-.ivent {
+.contents5-title1 {
+    width: 173px;
+}
+.event {
     background-color: #fff;
     border: solid 4px #4f260b;
-    width: 1000px;
+    width: 99%;
     margin: 0 auto;
     margin-top: 35px;
     padding: 30px 0;
@@ -198,9 +214,11 @@ body {
     line-height: 1.96;
 }
 .schedule {
-    display: flex;
-    width: 675px;
+    width: 68%;
     margin: 0 auto;
+}
+.schedule ul {
+    display: flex;
 }
 .date {
     font-size: 23px;
@@ -212,12 +230,14 @@ body {
     text-decoration: underline;
     margin-left: 42px;
 }
-
+/*ACCESS*/
 .contents6 {
-    background-color: #e8d9bf;
     width: 100%;
     text-align: center;
     padding-top: 76px;
+}
+.contents6-title1 {
+    width: 213px;
 }
 iframe {
     width: 100%;
@@ -225,17 +245,20 @@ iframe {
     margin-top: 40px;
     filter: grayscale(100%);
 }
-
+/*フッター*/
 footer {
     background-color: #fff;
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 74px;
 }
 .footer-wrap {
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
+    padding: 80px 10px 74px 10px;
+}
+.footer-logo {
+    width: 227px;
 }
 .contact {
     margin-left: 65px;
@@ -244,6 +267,12 @@ footer {
     color: #000;
     font-size: 20px;
     line-height: 1.95;
+}
+.top-button {
+    max-width: 1000px;
+    width: 125px;
+    margin-left: auto;
+    border: 0;
 }
 .copyright {
     color: #000;
