@@ -87,7 +87,6 @@ body {
 }
 /*コンテンツ*/
 .contents1 {
-    width: 100%;
     text-align: center;
     padding: 107px 0 95px 0;
 }
@@ -105,14 +104,21 @@ body {
     margin-top: 46px;
     line-height: 1.65;
 }
+.top-button1 {
+    width: 125px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+}
 /*ABOUT US*/
 .contents2 {
-    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
+    align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 10px;
 }
 .contents2-phot {
@@ -121,9 +127,8 @@ body {
     border-radius: 0 0 100px 0;
 }
 .contents2-1 {
-    /*490÷1000の計算*/
-    width: 49%;
-    margin-left: 80px;
+    /*画像50% 右コンテンツ42% 余った8％が余白となる*/
+    width: 42%;
     padding: 63px 0 42px 0;
 }
 .contents2-title {
@@ -141,7 +146,6 @@ body {
 }
 /*MENU*/
 .contents3 {
-    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -157,10 +161,11 @@ body {
 }
 .menu ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .menu1 {
     /*300÷1000の計算*/
+    /*残りの10%が余白。コンテンツ間5%ずつli+liの記述は不要*/
     width: 30%;
 }
 .contents3-phot {
@@ -176,12 +181,8 @@ body {
     line-height: 1.47;
     margin-top: 24px;
 }
-.menu1 + .menu1 {
-    margin-left: 50px;
-}
 /*GALLERY*/
 .contents4 {
-    width: 100%;
     text-align: center;
     padding-top: 95px;
 }
@@ -194,7 +195,6 @@ body {
 }
 /*EVENT*/
 .contents5 {
-    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -232,7 +232,6 @@ body {
 }
 /*ACCESS*/
 .contents6 {
-    width: 100%;
     text-align: center;
     padding-top: 76px;
 }
@@ -244,6 +243,7 @@ iframe {
     height: 471px;
     margin-top: 40px;
     filter: grayscale(100%);
+    z-index: index 1;
 }
 /*フッター*/
 footer {
@@ -253,7 +253,6 @@ footer {
 .footer-wrap {
     display: flex;
     max-width: 1000px;
-    width: 100%;
     margin: 0 auto;
     padding: 80px 10px 74px 10px;
 }
@@ -267,12 +266,6 @@ footer {
     color: #000;
     font-size: 20px;
     line-height: 1.95;
-}
-.top-button {
-    max-width: 1000px;
-    width: 125px;
-    margin-left: auto;
-    border: 0;
 }
 .copyright {
     color: #000;
